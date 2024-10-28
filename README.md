@@ -29,8 +29,8 @@ Execute the SQL commands in the `database.sql` file to create the necessary tabl
 ```bash
 mysql -u <mysql-UserName> -p hospital_db < database.sql
 ```
-Replace <code><mysql-UserName></code> with your MySQL username.
-Enter you desire password if youve set it already or else leave it empty and hit enter.
+Replace `<mysql-UserName>` with your MySQL username.
+Enter you MySql password if you've set already, else leave it empty and hit enter.
 
 ### 3. Install Go Dependencies 
 
