@@ -1,5 +1,8 @@
-CREATE DATABASE hospital_db;
+CREATE DATABASE IF NOT EXISTS hospital_db;
 USE hospital_db;
+
+DROP TABLE IF EXISTS patients;
+
 CREATE TABLE patients (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
