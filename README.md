@@ -1,4 +1,4 @@
-# Hospital Patient Records Application
+# **Hospital DB:** A Hospital Patient Records Application
 
 This is a college project for managing hospital patient records. The application allows users to add, fetch, and remove patient records from a MySQL database.
 
