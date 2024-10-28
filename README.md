@@ -71,6 +71,9 @@ go run hospital_app.go
   <img src="/screenshots/1.png" alt="Image 1" width="501">
   <img src="/screenshots/2.png" alt="Image 2" width="501">
   <img src="/screenshots/3.png" alt="Image 3" width="501">
+  <img src="/screenshots/4.png" alt="Image 1" width="501">
+  <img src="/screenshots/5.png" alt="Image 2" width="501">
+  <img src="/screenshots/6.png" alt="Image 3" width="501">
 </div>
 
 
