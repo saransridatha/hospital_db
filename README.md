@@ -64,3 +64,13 @@ go get github.com/go-sql-driver/mysql
 ```bash
 go run hospital_app.go
 ```
+
+## Screenshots
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="/screenshots/1.png" alt="Image 1" width="501">
+  <img src="/screenshots/2.png" alt="Image 2" width="501">
+  <img src="/screenshots/3.png" alt="Image 3" width="501">
+</div>
+
+
