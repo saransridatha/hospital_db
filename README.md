@@ -17,7 +17,7 @@ Before running the application, ensure you have the following installed:
 - [MySQL](https://dev.mysql.com/doc/refman/8.0/en/installing.html)
 
 ## Installation Steps
-#### Note: This application is built and tested on a Linux machine(Fedora 40), it might not work the same on Windows/MacOS.
+#### **Note:** *This application is built and tested on a Linux machine(Fedora 40), it might not work the same on Windows/MacOS.*
 ### 1. Install MySQL
 
 Follow the official MySQL installation guide for your operating system. Ensure you have a running MySQL server and have created a database named `hospital_db`.
