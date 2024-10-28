@@ -1,78 +1,48 @@
-# Hospital Patient Records System
-==========================
+# Hospital Patient Records Application
 
-This is a college project for a hospital patient records system. The 
-system allows users to add, fetch, and remove patients from the database.
+This is a college project for managing hospital patient records. The application allows users to add, fetch, and remove patient records from a MySQL database.
 
 ## Features
 
-*   Add new patients with details such as name, age, gender, contact 
-information, diagnosis, and treatment.
-*   Fetch all patients from the database.
-*   Remove a patient by entering their ID.
-*   Display patients in a new window for better user experience.
+- Add new patient records
+- Fetch and display existing patients
+- Remove patient records by ID
+- Search for patients by name
 
-## Installation
-------------
+## Prerequisites
 
-To run this application, follow these steps:
+Before running the application, ensure you have the following installed:
 
-### Step 1: Install MySQL
+- [Go](https://golang.org/doc/install) (version 1.22 or later)
+- [MySQL](https://dev.mysql.com/doc/refman/8.0/en/installing.html)
 
-Download the MySQL installer from the official website and follow the 
-installation instructions.
+## Installation Steps
 
-### Step 2: Install Dependencies
+### 1. Install MySQL
 
-Clone the repository and install the dependencies by running the following 
-command in your terminal:
+Follow the official MySQL installation guide for your operating system. Ensure you have a running MySQL server and have created a database named `hospital_db`.
+
+### 2. Set Up the Database
+
+Execute the SQL commands in the `database.sql` file to create the necessary tables. You can run the script using the MySQL command line:
+
 ```bash
-go get -u github.com/fyne-io/fyne/v2
-go get -u github.com/fyne-io/fyne/v2/theme
+mysql -u <mysql-UserName> -p hospital_db < database.sql
 ```
-Also, install MySQL connector for Go using the following command:
+Replace <code><mysql-UserName></code> with your MySQL username.
+Enter you desire password if youve set it already or else leave it empty and hit enter.
+
+### 3. Install Go Dependencies 
+
+Navigate to the project directory and run the following command to install the required Go dependencies:
 ```bash
-go get -u mysql/mysql/connector/go
+go get fyne.io/fyne/v2
+go get github.com/go-sql-driver/mysql
 ```
-### Step 3: Create Database and Tables
 
-Create a new database named "hospital" by running the following SQL script 
-in your terminal:
-```sql
--- database.sql
-CREATE DATABASE hospital;
+### 4. Run the Application
 
-USE hospital;
-CREATE TABLE patients (
-    id INT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    age INT NOT NULL,
-    gender VARCHAR(50) NOT NULL,
-    contact VARCHAR(100) NOT NULL,
-    diagnosis VARCHAR(255),
-    treatment VARCHAR(255)
-);
-```
-### Step 4: Run the Application
-
-Finally, run the application by executing the following command in your 
-terminal:
+After installing the dependencies, you can run the application with the following command:
 ```bash
-go build .
-./hospital
+go run hospital_app.go
 ```
-Replace `./` with the path to the compiled binary file.
-
-## Screenshots
--------------
-
-Here are three screenshots of the application:
-
-[![Screenshot 
-1](https://example.com/screenshot1.png)](https://example.com/screenshot1.pn1](https://example.com/screenshot1.png)](https://example.com/creenshot1.png)
-[![Screenshot 
-2](https://example.com/screenshot2.png)](https://example.com/screenshot2.pn2](https://example.com/screenshot2.png)](https://example.com/creenshot2.png)
-[![Screenshot 
-3](https://example.com/screenshot3.png)](https://example.com/screenshot3.pn3](https://example.com/screenshot3.png)](https://example.com/creenshot3.png)
-
-
