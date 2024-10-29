@@ -36,7 +36,7 @@ Incase if root password for MySQL is not set,
    ```bash
    mysql -u root -p
    ```
-2. Then enter the following command:(change the root-password parameter to your actual password which you want to set)
+2. Then enter the following command:(change the `root-password` parameter to your actual password which you want to set)
    ```mysql>
    ALTER USER 'root'@'localhost' IDENTIFIED BY 'root-password';
    ```   
