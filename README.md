@@ -30,7 +30,7 @@ Execute the SQL commands in the `database.sql` file to create the necessary tabl
 mysql -u <mysql-UserName> -p hospital_db < database.sql
 ```
 Replace `<mysql-UserName>` with your MySQL username.
-Enter you MySql password if you've set already, else leave it empty and hit enter.
+Enter your MySQL password if you've set already, else leave it empty and hit enter.
 Incase if root password for MySQL is not set, 
 1. Enter this command in terminal:
    ```bash
