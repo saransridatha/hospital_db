@@ -31,7 +31,7 @@ mysql -u <mysql-UserName> -p hospital_db < database.sql
 ```
 Replace `<mysql-UserName>` with your MySQL username.
 Enter you MySql password if you've set already, else leave it empty and hit enter.
-Incase if root password for MySql is not set, 
+Incase if root password for MySQL is not set, 
 1. Enter this command in terminal:
    ```bash
    mysql -u root -p
@@ -59,7 +59,7 @@ go get github.com/go-sql-driver/mysql
 ```
 
 ### 4. Run the Application
-1. After installing the dependencies, in the `hospital_app.go` file change the `<mysql-UserName>` to your actual MySql username and `<mysql-Password>` to your actual MySql password.
+1. After installing the dependencies, in the `hospital_app.go` file change the `<mysql-UserName>` to your actual MySQL username and `<mysql-Password>` to your actual MySQL password.
 2. After changing these two parameters, you can run the application with the following command:
 ```bash
 go run hospital_app.go
